@@ -31,8 +31,8 @@ class RepositoryContractTests(unittest.TestCase):
             },
             set(compatibility),
         )
-        self.assertIsNone(compatibility["minimum_yams"])
-        self.assertIsNone(compatibility["minimum_ref"])
+        self.assertEqual("0.1.0", compatibility["minimum_yams"])
+        self.assertEqual("v0.1.0", compatibility["minimum_ref"])
         self.assertEqual(
             "24e671d8104da7019004390b4d7ab7696da2a4c0",
             compatibility["development_commit"],

@@ -47,10 +47,9 @@ separately and confirm the required contracts with:
 yams-wiki capabilities --json
 ```
 
-Until Yams publishes the capability-1 release, `compatibility.json` pins the
-reviewed development commit and deliberately leaves `minimum_yams` and
-`minimum_ref` unset. A public skills release must replace those nulls with a
-released version and tag, then pass both compatibility lanes.
+These skills require Yams 0.1.0 or newer (tag `v0.1.0`). `compatibility.json`
+pins `minimum_yams` and `minimum_ref` to that release, verified by both
+compatibility lanes.
 
 ## Development
 
