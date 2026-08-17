@@ -60,7 +60,12 @@ class RepositoryContractTests(unittest.TestCase):
         )
         self.assertIn("Node.js 22.20 or newer", readme)
         self.assertIn("installer only", readme)
-        self.assertIn("private pre-release", readme)
+        self.assertIn(
+            "These skills target the released Yams 0.1.0 (tag `v0.1.0`)",
+            readme,
+        )
+        self.assertIn("published", readme)
+        self.assertIn("capability contracts.", readme)
         self.assertIn("npx skills", readme)
         self.assertIn("skills-lock.json", readme)
         self.assertIn("does not install Yams", readme)

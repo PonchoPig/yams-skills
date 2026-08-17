@@ -3,8 +3,8 @@
 Portable agent workflows for tilling, sowing, harvesting, and cultivating
 shared project memory with [Yams](https://github.com/PonchoPig/yams).
 
-This repository is a private pre-release while the matching Yams capability
-contracts are prepared for their first public release.
+These skills target the released Yams 0.1.0 (tag `v0.1.0`) and its published
+capability contracts.
 
 ## Skills
 
