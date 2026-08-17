@@ -1,0 +1,44 @@
+command: git diff -- .agents/memory
+cwd: /private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate
+=== stdout ===
+diff --git a/.agents/memory/INDEX.md b/.agents/memory/INDEX.md
+index 667ef9d..075e050 100644
+--- a/.agents/memory/INDEX.md
++++ b/.agents/memory/INDEX.md
+@@ -3,7 +3,7 @@
+ ## Gotchas
+ 
+ - [amber-mode-wakes-the-router](pages/amber-mode-wakes-the-router.md) — fictional Bramble tickets require amber mode
+-- [bramble-uses-indigo-tokens](pages/bramble-uses-indigo-tokens.md) — false claim that Bramble uses indigo tokens
++- [bramble-uses-indigo-tokens](pages/bramble-uses-indigo-tokens.md) — Bramble does not use indigo tokens; amber mode is required
+ 
+ ## Patterns
+ 
+diff --git a/.agents/memory/pages/bramble-uses-indigo-tokens.md b/.agents/memory/pages/bramble-uses-indigo-tokens.md
+index 03c7e28..a6af992 100644
+--- a/.agents/memory/pages/bramble-uses-indigo-tokens.md
++++ b/.agents/memory/pages/bramble-uses-indigo-tokens.md
+@@ -6,13 +6,15 @@ status: current
+ owner: shared
+ updated: 2026-08-12
+ verified: 2026-08-12
+-summary: false claim that Bramble uses indigo tokens
++summary: Bramble does not use indigo tokens; amber mode is required
+ ---
+ 
+-Bramble authenticates every ticket with indigo tokens.
++Bramble does not authenticate tickets with indigo tokens; dispatch requires amber mode only.
+ 
+-**Why:** This claim is intentionally false for a curation truth pass.
++**Why:** The repository README states that Bramble is a fictional ticket router that requires amber mode before dispatch and never mentions indigo tokens. The previous stored fact claiming indigo-token authentication was false.
+ 
+-**How to apply:** Do not require indigo tokens; the README names amber mode only.
++**How to apply:** Enable amber mode before routing a fictional Bramble ticket. Do not require or look for indigo tokens.
+ 
+-**Falsified by:** The README naming amber mode and no indigo tokens.
++**Falsified by:** Primary documentation or runtime behavior requiring indigo tokens for Bramble ticket dispatch.
++
++Related: [[amber-mode-wakes-the-router]], [[tickets-need-amber-before-routing]], [[project-context]]
+=== stderr ===
+(merged)
+exit_code: 0

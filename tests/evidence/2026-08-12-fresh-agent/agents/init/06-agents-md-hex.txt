@@ -1,0 +1,15 @@
+=== init-partial/AGENTS.md hex ===
+00000000: 2320 436f 6262 6c65 2061 6765 6e74 730a  # Cobble agents.
+00000010: 2323 2050 726f 6a65 6374 206d 656d 6f72  ## Project memor
+00000020: 790a 0a2d 2053 6561 7263 6820 736f 6d65  y..- Search some
+00000030: 686f 772e 0a                             how..
+
+=== init-dirty/AGENTS.md hex ===
+00000000: 2320 5175 696c 6c20 6167 656e 7473 0a55  # Quill agents.U
+00000010: 6e63 6f6d 6d69 7474 6564 2066 6f72 6569  ncommitted forei
+00000020: 676e 2069 6e73 7472 7563 7469 6f6e 732e  gn instructions.
+00000030: 0a                                       .
+
+=== init-drift/AGENTS.md hex ===
+00000000: 666f 7265 6967 6e20 6472 6966 7465 6420  foreign drifted 
+00000010: 696e 7374 7275 6374 696f 6e73 0a         instructions.

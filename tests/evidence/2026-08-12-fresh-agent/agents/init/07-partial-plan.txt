@@ -1,0 +1,6 @@
+=== PARTIAL plan stdout ===
+=== yams-wiki init plan --request /tmp/yams-fresh-agent-20260812-HNyW82/evidence/agents/init/07-partial-plan-request.json ===
+cwd: /private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial
+EXIT:2
+=== PARTIAL plan stderr ===
+repository layout conflict: inspection reported conflicts: AGENTS.md (noncanonical-policy)

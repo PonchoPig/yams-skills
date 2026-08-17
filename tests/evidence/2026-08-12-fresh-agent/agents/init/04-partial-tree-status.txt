@@ -1,0 +1,53 @@
+=== fixture: init-partial ===
+cwd: /tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial
+=== git rev-parse --show-toplevel ===
+/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial
+EXIT:0
+
+=== git status --short ===
+?? .agents/skills/
+EXIT:0
+
+=== find (non-.git) ===
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/memory
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/memory/NOTES.md
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-curate
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-curate/SKILL.md
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-curate/agents
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-curate/agents/openai.yaml
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-init
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-init/SKILL.md
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-init/agents
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-init/agents/openai.yaml
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-search
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-search/SKILL.md
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-search/agents
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.agents/skills/yams-search/agents/openai.yaml
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/.git
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/AGENTS.md
+/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-partial/README.md
+
+=== ls -la root ===
+total 8
+drwxr-xr-x  6 owner group 192 Aug 12 17:36 .
+drwxr-xr-x  8 owner group 256 Aug 12 17:37 ..
+drwxr-xr-x  4 owner group 128 Aug 12 17:36 .agents
+drwxr-xr-x 12 owner group 384 Aug 12 17:40 .git
+-rw-r--r--  1 owner group  53 Aug 12 17:36 AGENTS.md
+-rw-r--r--  1 owner group  68 Aug 12 17:36 README.md
+
+=== ls -la .agents (if any) ===
+total 0
+drwxr-xr-x 4 owner group 128 Aug 12 17:36 .
+drwxr-xr-x 6 owner group 192 Aug 12 17:36 ..
+drwxr-xr-x 3 owner group  96 Aug 12 17:36 memory
+drwxr-xr-x 5 owner group 160 Aug 12 17:36 skills
+
+=== ls -la .agents/memory (if any) ===
+total 4
+drwxr-xr-x 3 owner group  96 Aug 12 17:36 .
+drwxr-xr-x 4 owner group 128 Aug 12 17:36 ..
+-rw-r--r-- 1 owner group  13 Aug 12 17:36 NOTES.md

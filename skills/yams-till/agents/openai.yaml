@@ -1,0 +1,4 @@
+interface:
+  display_name: "Yams Till"
+  short_description: "Set up or upgrade Yams project memory"
+  default_prompt: "Use $yams-till to inspect and propose Yams memory setup for this repository."

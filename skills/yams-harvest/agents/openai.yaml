@@ -1,0 +1,4 @@
+interface:
+  display_name: "Yams Harvest"
+  short_description: "Recall durable project knowledge with Yams"
+  default_prompt: "Use $yams-harvest to find relevant project memory before investigating this task."

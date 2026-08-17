@@ -1,0 +1,33 @@
+command: ls -la .agents/memory/; echo '--- lock ---'; ls -la .agents/memory/.write.lock; echo '--- lock contents ---'; cat -A .agents/memory/.write.lock 2>/dev/null || xxd .agents/memory/.write.lock; echo '--- git status ---'; git status --short .agents/memory/; echo '--- find extra ---'; find . -maxdepth 3 -type f ! -path './.git/*' | sort
+cwd: /private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate
+=== stdout ===
+total 12
+drwxr-xr-x 6 owner group  192 Aug 12 17:40 .
+drwxr-xr-x 4 owner group  128 Aug 12 17:37 ..
+-rw------- 1 owner group    0 Aug 12 17:40 .write.lock
+-rw-r--r-- 1 owner group  614 Aug 12 17:37 INDEX.md
+-rw-r--r-- 1 owner group 7537 Aug 12 17:37 SCHEMA.md
+drwxr-xr-x 6 owner group  192 Aug 12 17:37 pages
+--- lock ---
+-rw------- 1 owner group 0 Aug 12 17:40 .agents/memory/.write.lock
+--- lock contents ---
+0 .agents/memory/.write.lock
+0000000
+--- git status memory ---
+?? .agents/memory/.write.lock
+--- extra files ---
+./.agents/memory/.write.lock
+./.agents/memory/INDEX.md
+./.agents/memory/SCHEMA.md
+./.agents/memory/pages/amber-mode-wakes-the-router.md
+./.agents/memory/pages/bramble-uses-indigo-tokens.md
+./.agents/memory/pages/project-context.md
+./.agents/memory/pages/tickets-need-amber-before-routing.md
+./.agents/skills/yams-curate/SKILL.md
+./.agents/skills/yams-init/SKILL.md
+./.agents/skills/yams-search/SKILL.md
+./AGENTS.md
+./Makefile
+./README.md
+=== stderr ===
+(merged)

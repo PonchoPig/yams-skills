@@ -1,0 +1,29 @@
+command: yams-wiki write --help; yams-wiki --help
+cwd: /private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate
+=== stdout ===
+Read one JSON request from stdin and write a page transactionally
+
+Usage: yams-wiki write <PATH>
+
+Arguments:
+  <PATH>  
+
+Options:
+  -h, --help  Print help
+---
+Usage: yams-wiki <COMMAND>
+
+Commands:
+  capabilities  Report stable machine-readable Yams contracts
+  init          Inspect, plan, or apply repository memory initialization
+  check         Validate the structural wiki contract
+  compat        Report constructs outside the supported Obsidian-compatible profile
+  reindex       Check or regenerate the derived index
+  write         Read one JSON request from stdin and write a page transactionally
+  help          Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version
+=== stderr ===
+(merged)

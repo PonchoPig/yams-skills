@@ -1,0 +1,54 @@
+cmd: memory-search --json -k 5 --no-gate How should a high-altitude beet pickle be canned?
+exit: 0
+----- stdout -----
+[
+  {
+    "clipped_end": true,
+    "clipped_start": false,
+    "corpus": "shared",
+    "exact": false,
+    "name": "project-context",
+    "path": "/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate/.agents/memory/pages/project-context.md",
+    "score": 0.6959,
+    "snippet": "Bramble is a fictional ticket router that requires amber mode before dispatch. **Why:** The repository README states the amber-mode dispatch rule. **How to apply:** Enable amber mode before routing a fictional Bramble ticket. **Falsified by:** A Bramble ticket dispatching while",
+    "status": "current",
+    "text": "Bramble is a fictional ticket router that requires amber mode before dispatch.\n\n**Why:** The repository README states the amber-mode dispatch rule.\n\n**How to apply:** Enable amber mode before routing a fictional Bramble ticket.\n\n**Falsified by:** A Bramble ticket dispatching while amber mode is disabled."
+  },
+  {
+    "clipped_end": false,
+    "clipped_start": false,
+    "corpus": "shared",
+    "exact": false,
+    "name": "bramble-uses-indigo-tokens",
+    "path": "/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate/.agents/memory/pages/bramble-uses-indigo-tokens.md",
+    "score": 0.6941,
+    "snippet": "Bramble authenticates every ticket with indigo tokens. **Why:** This claim is intentionally false for a curation truth pass. **How to apply:** Do not require indigo tokens; the README names amber mode only. **Falsified by:** The README naming amber mode and no indigo tokens.",
+    "status": "current",
+    "text": "Bramble authenticates every ticket with indigo tokens.\n\n**Why:** This claim is intentionally false for a curation truth pass.\n\n**How to apply:** Do not require indigo tokens; the README names amber mode only.\n\n**Falsified by:** The README naming amber mode and no indigo tokens."
+  },
+  {
+    "clipped_end": false,
+    "clipped_start": false,
+    "corpus": "shared",
+    "exact": false,
+    "name": "amber-mode-wakes-the-router",
+    "path": "/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate/.agents/memory/pages/amber-mode-wakes-the-router.md",
+    "score": 0.6764,
+    "snippet": "Bramble rejects tickets unless amber mode is enabled. **Why:** A synthetic README check observes dispatch only in amber mode. **How to apply:** Enable amber mode before submitting a fictional ticket. **Falsified by:** A fictional ticket succeeding while amber mode is disabled.",
+    "status": "current",
+    "text": "Bramble rejects tickets unless amber mode is enabled.\n\n**Why:** A synthetic README check observes dispatch only in amber mode.\n\n**How to apply:** Enable amber mode before submitting a fictional ticket.\n\n**Falsified by:** A fictional ticket succeeding while amber mode is disabled."
+  },
+  {
+    "clipped_end": false,
+    "clipped_start": false,
+    "corpus": "shared",
+    "exact": false,
+    "name": "tickets-need-amber-before-routing",
+    "path": "/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate/.agents/memory/pages/tickets-need-amber-before-routing.md",
+    "score": 0.6666,
+    "snippet": "Bramble routing succeeds only after amber mode is turned on. **Why:** The same README rule is restated as a pattern. **How to apply:** Turn on amber mode, then route. **Falsified by:** Routing without amber mode succeeding.",
+    "status": "current",
+    "text": "Bramble routing succeeds only after amber mode is turned on.\n\n**Why:** The same README rule is restated as a pattern.\n\n**How to apply:** Turn on amber mode, then route.\n\n**Falsified by:** Routing without amber mode succeeding."
+  }
+]
+----- stderr -----

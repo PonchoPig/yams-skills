@@ -1,0 +1,5 @@
+cmd: memory-search --json -k 5 How should a high-altitude beet pickle be canned?
+exit: 3
+----- stdout -----
+[]
+----- stderr -----

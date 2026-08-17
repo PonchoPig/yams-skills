@@ -1,0 +1,16 @@
+{
+  "root": "/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/init-dirty",
+  "inspection_sha256": "f1f6a0838ccadcaa09f6b694a621db19454d62f5a347c36e3d9534c4616f5c28",
+  "mode": "full",
+  "date": "2026-08-12",
+  "agents_md": "# Quill agents\nUncommitted foreign instructions.\n\n## Project memory\n\n- Search early with `memory-search --json -k 5 \"<focused question>\"` when project history, conventions, decisions, or prior failures may matter.\n- Treat hits as leads and verify consequential claims against current code, tests, documentation, or Git history.\n- Interpret exit status 1 as no corpus or nothing indexed, exit status 3 as below the confidence gate, and exit status 4 as an operational failure. Retry exit status 3 once with `--no-gate` for possible leads; never treat exit status 4 as missing memory.\n- Never initialize a missing corpus unless the user explicitly asks.\n- Before changing `.agents/memory/`, inspect `git status --short .agents/memory/` and do not stack changes on another writer's uncommitted work.\n- Before any memory write, read `.agents/memory/SCHEMA.md` completely and follow it. `yams-wiki write` reindexes automatically; after direct page edits or recovery, run `yams-wiki reindex .agents/memory`. Never hand-edit the generated index region.\n- Preserve only verified, durable, reusable knowledge; never preserve secrets, transcripts, speculation, or temporary task progress.\n",
+  "project_page": {
+    "title": "Project context",
+    "page_type": "project-state",
+    "fact": "Quill is a fictional note press.",
+    "why": "The README states this project identity.",
+    "how_to_apply": "Treat Quill as a fictional note press when recording durable project context.",
+    "falsified_by": "README.md no longer describes Quill as a fictional note press.",
+    "summary": "Quill is a fictional note press."
+  }
+}

@@ -1,0 +1,17 @@
+command: ls -l .agents/memory/pages/; test -f .agents/memory/pages/amber-mode-wakes-the-router.md && echo AMBER_EXISTS; test -f .agents/memory/pages/tickets-need-amber-before-routing.md && echo TICKETS_EXISTS; git status --short .agents/memory/; echo 'NOTE: consolidation pressure — proposed only; no merge or delete applied'
+cwd: /private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate
+=== stdout ===
+total 16
+-rw-r--r-- 1 owner group 497 Aug 12 17:37 amber-mode-wakes-the-router.md
+-rw-r--r-- 1 owner group 888 Aug 12 17:42 bramble-uses-indigo-tokens.md
+-rw-r--r-- 1 owner group 505 Aug 12 17:37 project-context.md
+-rw-r--r-- 1 owner group 457 Aug 12 17:37 tickets-need-amber-before-routing.md
+AMBER_EXISTS
+TICKETS_EXISTS
+ M .agents/memory/INDEX.md
+ M .agents/memory/pages/bramble-uses-indigo-tokens.md
+?? .agents/memory/.write.lock
+NOTE: consolidation pressure — proposed only; no merge or delete applied
+=== stderr ===
+(merged)
+exit_code: 0

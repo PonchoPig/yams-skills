@@ -1,0 +1,12 @@
+=== post-apply git status ===
+--- init-partial ---
+?? .agents/skills/
+
+--- init-dirty ---
+?? .agents/
+?? AGENTS.md
+
+--- init-drift ---
+?? .agents/
+?? AGENTS.md
+

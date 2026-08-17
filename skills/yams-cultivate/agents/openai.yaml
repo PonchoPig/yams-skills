@@ -1,0 +1,4 @@
+interface:
+  display_name: "Yams Cultivate"
+  short_description: "Audit and maintain durable Yams memory"
+  default_prompt: "Use $yams-cultivate to audit or maintain this repository memory."

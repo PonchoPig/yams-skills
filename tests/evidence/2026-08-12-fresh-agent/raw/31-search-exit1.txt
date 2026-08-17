@@ -1,0 +1,5 @@
+cmd: memory-search --json -k 5 Why did this project choose an opaque inspection token?
+exit: 1
+----- stdout -----
+[]
+----- stderr -----

@@ -1,0 +1,5 @@
+cmd: yams-wiki write /tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate/.agents/memory
+exit: 2
+----- stdout -----
+{"error":"stdin is not valid JSON: EOF while parsing a value at line 1 column 0","exit":2,"hint":"send one JSON object","ok":false}
+----- stderr -----

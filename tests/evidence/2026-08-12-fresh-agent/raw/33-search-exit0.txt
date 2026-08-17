@@ -1,0 +1,42 @@
+cmd: memory-search --json -k 5 Why do Bramble tickets require amber mode before dispatch?
+exit: 0
+----- stdout -----
+[
+  {
+    "clipped_end": true,
+    "clipped_start": false,
+    "corpus": "shared",
+    "exact": false,
+    "name": "project-context",
+    "path": "/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate/.agents/memory/pages/project-context.md",
+    "score": 0.9246,
+    "snippet": "Bramble is a fictional ticket router that requires amber mode before dispatch. **Why:** The repository README states the amber-mode dispatch rule. **How to apply:** Enable amber mode before routing a fictional Bramble ticket. **Falsified by:** A Bramble ticket dispatching while",
+    "status": "current",
+    "text": "Bramble is a fictional ticket router that requires amber mode before dispatch.\n\n**Why:** The repository README states the amber-mode dispatch rule.\n\n**How to apply:** Enable amber mode before routing a fictional Bramble ticket.\n\n**Falsified by:** A Bramble ticket dispatching while amber mode is disabled."
+  },
+  {
+    "clipped_end": false,
+    "clipped_start": false,
+    "corpus": "shared",
+    "exact": false,
+    "name": "amber-mode-wakes-the-router",
+    "path": "/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate/.agents/memory/pages/amber-mode-wakes-the-router.md",
+    "score": 0.8983,
+    "snippet": "Bramble rejects tickets unless amber mode is enabled. **Why:** A synthetic README check observes dispatch only in amber mode. **How to apply:** Enable amber mode before submitting a fictional ticket. **Falsified by:** A fictional ticket succeeding while amber mode is disabled.",
+    "status": "current",
+    "text": "Bramble rejects tickets unless amber mode is enabled.\n\n**Why:** A synthetic README check observes dispatch only in amber mode.\n\n**How to apply:** Enable amber mode before submitting a fictional ticket.\n\n**Falsified by:** A fictional ticket succeeding while amber mode is disabled."
+  },
+  {
+    "clipped_end": false,
+    "clipped_start": false,
+    "corpus": "shared",
+    "exact": false,
+    "name": "tickets-need-amber-before-routing",
+    "path": "/private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate/.agents/memory/pages/tickets-need-amber-before-routing.md",
+    "score": 0.8969,
+    "snippet": "Bramble routing succeeds only after amber mode is turned on. **Why:** The same README rule is restated as a pattern. **How to apply:** Turn on amber mode, then route. **Falsified by:** Routing without amber mode succeeding.",
+    "status": "current",
+    "text": "Bramble routing succeeds only after amber mode is turned on.\n\n**Why:** The same README rule is restated as a pattern.\n\n**How to apply:** Turn on amber mode, then route.\n\n**Falsified by:** Routing without amber mode succeeding."
+  }
+]
+----- stderr -----

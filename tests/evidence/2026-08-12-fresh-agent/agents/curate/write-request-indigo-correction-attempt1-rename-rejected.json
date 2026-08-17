@@ -1,0 +1,17 @@
+{
+  "title": "Bramble does not use indigo tokens",
+  "type": "gotcha",
+  "fact": "Bramble does not authenticate tickets with indigo tokens; dispatch requires amber mode only.",
+  "why": "The repository README states that Bramble is a fictional ticket router that requires amber mode before dispatch and never mentions indigo tokens. The previous stored fact claiming indigo-token authentication was false.",
+  "how_to_apply": "Enable amber mode before routing a fictional Bramble ticket. Do not require or look for indigo tokens.",
+  "falsified_by": "Primary documentation or runtime behavior requiring indigo tokens for Bramble ticket dispatch.",
+  "summary": "Bramble does not use indigo tokens; amber mode is required",
+  "related": [
+    "amber-mode-wakes-the-router",
+    "tickets-need-amber-before-routing",
+    "project-context"
+  ],
+  "update": true,
+  "target": "bramble-uses-indigo-tokens",
+  "expected_sha256": "05a82975797f75eae6a3e70c3fdea84211445c9a44ec2abb78a3ffb78e869e83"
+}

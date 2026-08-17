@@ -1,0 +1,13 @@
+command: git log --oneline --all && git log --format='%H %s' -- .agents/memory && git log --format='%H %s' --grep='^memory: curate pass' && git log --format='%H %s' --grep='^memory: garden pass'
+cwd: /private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate
+=== stdout ===
+--- git log --oneline --all ---
+9d1eefe fixture: install fictional bramble memory
+f6eccaa initial fictional bramble project
+--- git log memory ---
+9d1eefe23f4478c2b41756acd1e2de3c2a22c9ba fixture: install fictional bramble memory
+--- curate pass ---
+--- garden pass ---
+=== stderr ===
+(merged)
+exit_code: 0

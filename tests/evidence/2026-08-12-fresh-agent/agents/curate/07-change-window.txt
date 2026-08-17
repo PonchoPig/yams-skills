@@ -1,0 +1,32 @@
+command: git status --short .agents/memory/; git log --format=fuller -1 9d1eefe; git log --name-only --pretty=format:'%H %s' 9d1eefe; git ls-tree -r --name-only HEAD -- .agents/memory
+cwd: /private/tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate
+=== stdout ===
+--- status ---
+?? .agents/memory/.write.lock
+--- first memory commit ---
+commit 9d1eefe23f4478c2b41756acd1e2de3c2a22c9ba
+Author:     Yams Fresh Agent <fresh-agent@example.invalid>
+AuthorDate: Wed Aug 12 17:37:46 2026 -0500
+Commit:     Yams Fresh Agent <fresh-agent@example.invalid>
+CommitDate: Wed Aug 12 17:37:58 2026 -0500
+
+    fixture: install fictional bramble memory
+--- files in memory commit ---
+9d1eefe23f4478c2b41756acd1e2de3c2a22c9ba fixture: install fictional bramble memory
+.agents/memory/INDEX.md
+.agents/memory/SCHEMA.md
+.agents/memory/pages/amber-mode-wakes-the-router.md
+.agents/memory/pages/bramble-uses-indigo-tokens.md
+.agents/memory/pages/project-context.md
+.agents/memory/pages/tickets-need-amber-before-routing.md
+AGENTS.md
+--- current memory tree ---
+.agents/memory/INDEX.md
+.agents/memory/SCHEMA.md
+.agents/memory/pages/amber-mode-wakes-the-router.md
+.agents/memory/pages/bramble-uses-indigo-tokens.md
+.agents/memory/pages/project-context.md
+.agents/memory/pages/tickets-need-amber-before-routing.md
+=== stderr ===
+(merged)
+exit_code: 0

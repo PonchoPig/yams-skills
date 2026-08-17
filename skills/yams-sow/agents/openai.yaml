@@ -1,0 +1,4 @@
+interface:
+  display_name: "Yams Sow"
+  short_description: "Preserve one verified durable Yams finding"
+  default_prompt: "Use $yams-sow only if you verified a durable reusable fact that should be preserved."

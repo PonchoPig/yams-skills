@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "minimum_yams": null,
+  "minimum_ref": null,
+  "development_commit": "24e671d8104da7019004390b4d7ab7696da2a4c0",
+  "contracts": {
+    "search_results": 1,
+    "repository_layout": 1,
+    "init_manifest": 3,
+    "wiki_maintenance": 2
+  }
+}

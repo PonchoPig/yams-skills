@@ -1,0 +1,13 @@
+cmd: yams --reindex --project /tmp/yams-fresh-agent-20260812-HNyW82/fixtures/search-and-curate
+exit: 0
+----- stdout -----
+{
+  "changed": 4,
+  "embedded": 4,
+  "generation": 1,
+  "note_count": 0,
+  "ok": true,
+  "operation": "reindex",
+  "removed": 0
+}
+----- stderr -----
