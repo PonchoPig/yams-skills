@@ -228,3 +228,54 @@ identical method used above, they match the 2026-08-16 list exactly:
 - `yams-sow`: `d59a227927de21f7b037c0bd426e9ab983c2d6f2817f38948d8d26a1fdcc6a03`
 - `yams-till`: `5e5bfc1ac8d79b964b0bcc5b40261ae83fe4b58652f38b5faebde6b2a5ae7f6c`
 - `yams-cultivate`: `4cb0b2902ba25d787be98d788f9f9fef6ab18196ac8d2c075212f01d16b73ac6`
+
+## 2026-08-17 release compatibility
+
+On 2026-08-17 Yams published its first public release: tag `v0.1.0`
+(version `0.1.0`) at commit `6b323acab950736215549ba35e0e04786b883123`,
+descending from the public root `eb3fcee` recorded in the update above, with
+contracts
+`{"search_results":1,"repository_layout":1,"init_manifest":3,"wiki_maintenance":2}`.
+This resolves the "pending" note in the Deferred public-release evidence
+section above: released-version compatibility is no longer pending on a
+missing tag. This record is not rewritten; it is corrected going forward.
+
+`compatibility.json` now pins `minimum_yams` to `"0.1.0"` and `minimum_ref`
+to `"v0.1.0"`, replacing the private-prerelease nulls used until this point.
+
+`./scripts/test-released-yams.sh` was run for real from the repository root:
+it queried `https://api.github.com/repos/PonchoPig/yams/releases/latest`,
+resolved `v0.1.0` as both the pinned `minimum_ref` and the latest release,
+deduplicated the two to a single clone and build via its existing
+`awk '!seen[$0]++'` loop, and built that one checkout with `cargo build`.
+No script change was needed. It printed, in full:
+
+```text
+   Compiling proc-macro2 v1.0.107
+[... 52 additional crate builds elided ...]
+   Compiling yams-core v0.1.0 (/var/folders/rk/tcpf8m0s2hgf1rr2zs7w9f700000gn/T/yams-releases-test.10Hmd8/v0.1.0/crates/yams-core)
+   Compiling regex v1.13.1
+   Compiling yams-wiki v0.1.0 (/var/folders/rk/tcpf8m0s2hgf1rr2zs7w9f700000gn/T/yams-releases-test.10Hmd8/v0.1.0/crates/yams-wiki)
+    Finished `dev` profile [unoptimized] target(s) in 6.09s
+Yams capability contract passed
+released Yams compatibility passed
+```
+
+The lane exited 0 and, critically, did not print the old "released Yams
+compatibility skipped" line: `minimum_ref` is no longer null, so the skip
+branch is dead code on this pin.
+
+`python3 -m unittest discover -v` ran the full suite, 24 tests, and exited 0
+(1 skipped: the optional `YAMS_WIKI` product-integration case). That skipped
+case was also run explicitly against a separate `v0.1.0` checkout built the
+same way, with `YAMS_WIKI` pointed at its `target/debug/yams-wiki`, and
+passed.
+
+`./scripts/test-skills.sh` printed `portable skill installation passed` and
+`./scripts/test-yams-brand.sh` printed `Yams brand audit passed`; both
+exited 0.
+
+`skills/` is untouched since the 2026-08-16 update recorded above (this pass
+only touched `compatibility.json`, `README.md`, and the two test files), so
+the four skill digests are unchanged from the list at the end of that
+section.

@@ -38,6 +38,11 @@ class EvidenceContractTests(unittest.TestCase):
             "Yams capability contract passed",
             "24 tests",
             "portable skill installation passed",
+            "2026-08-17 release compatibility",
+            "6b323acab950736215549ba35e0e04786b883123",
+            "released Yams compatibility passed",
+            "Yams brand audit passed",
+            "no longer pending",
         ):
             self.assertIn(value, evidence)
         self.assertNotIn("Fresh-agent behavioral execution: passed", evidence)
